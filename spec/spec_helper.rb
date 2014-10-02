@@ -13,6 +13,9 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
+# ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration) # remove
+ActiveRecord::Migration.maintain_test_schema! # new!
+
 RSpec.configure do |config|
   # ## Mock Framework
   #
