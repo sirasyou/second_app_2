@@ -63,6 +63,22 @@ describe "StaticPages" do
       end
     end
     
+    #以下Contactページ用のtest
+    describe "Contact page" do
+      
+      #タイトルのテスト
+      it "should have the right title" do
+        visit '/static_pages/contact'
+        expect(page).to have_title('Contact')
+      end
+      
+      #コンテンツのテスト
+      it "should have the content 'Contact'" do
+        visit '/static_pages/contact'
+        expect(page).to have_content('Sample App')
+      end
+    end
+    
   end
   
 end
