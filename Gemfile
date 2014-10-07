@@ -9,6 +9,10 @@ gem 'rails', '4.1.1'
 gem 'pg'
 gem 'rails_12factor', '0.0.2'
 gem 'rspec-rails', '2.13.1'
+gem 'guard-rspec', '2.5.0'
+gem 'spork-rails', '4.0.0'
+gem 'guard-spork', '1.5.0'
+gem 'childprocess', '0.5.5'
 
 # Test
 group :test do
