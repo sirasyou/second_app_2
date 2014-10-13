@@ -22,7 +22,7 @@ describe "StaticPages" do
       #タイトルのテスト
       it "should have the right title" do
         visit '/static_pages/home'
-        expect(page).to have_title("Home")
+        expect(page).to have_title("Second App")
         
       end
       
@@ -30,6 +30,12 @@ describe "StaticPages" do
       it "should have the content 'Sample App'" do
         visit '/static_pages/home'
         expect(page).to have_content("#{base_content}")
+      end
+      
+      #タイトルにHomeが含まれていない
+      it "should not have a custom page title" do
+        visit '/static_pages/home'
+        expect(page).not_to have_title('| Home')
       end
     end
     
