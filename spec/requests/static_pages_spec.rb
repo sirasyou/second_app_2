@@ -75,7 +75,7 @@ describe "StaticPages" do
     describe "Contact page" do
       
       #タイトルのテスト
-      it "should have the right title" do
+      it "should have the title 'Contact'" do
         visit '/static_pages/contact'
         expect(page).to have_title('Contact')
       end
