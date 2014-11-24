@@ -3,7 +3,7 @@ require 'suopport/utilities.rb'
 
 describe "StaticPages" do
 
-  let(:base_content){"Sample App"}
+  # let(:base_content){"Sample App"}
 
   describe "GET /static_pages" do
 
