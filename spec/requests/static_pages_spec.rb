@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'suopport/utilities.rb'
 
 describe "StaticPages" do
 
@@ -17,74 +18,41 @@ describe "StaticPages" do
     #end
 
     #以下Homeページ用のtest
+    subject { page }
+
     describe "Home page" do
+      before {visit root_path}
 
-      #タイトルのテスト
-      it "should have the right title" do
-        visit root_path
-        expect(page).to have_title("Second App")
-
-      end
-
-      #コンテンツのテスト
-      it "should have the content 'Sample App'" do
-        visit root_path
-        expect(page).to have_content("#{base_content}")
-      end
-
-      #タイトルにHomeが含まれていない
-      it "should not have a custom page title" do
-        visit root_path
-        expect(page).not_to have_title('| Home')
-      end
+      it { should have_content('Sample App') }
+      it { should have_title(full_title('')) }
+      it { should_not have_title('| Home') }
     end
 
     #以下Helpページ用のtest
     describe "Help page" do
+      before {visit root_path}
 
-      #タイトルのテスト
-      it "should have the right title" do
-        visit help_path
-        expect(page).to have_title("Help")
-      end
+      it { should have_content('Help')}
+      it { should have_title(full_title('Help'))}
 
-      #コンテンツのテスト
-      it "should have the content 'Help'" do
-        visit help_path
-        expect(page).to have_content("#{base_content}")
-      end
     end
 
     #以下Aboutページ用のtest
     describe "About page" do
+      before {visit root_path}
 
-      #タイトルのテスト
-      it "should have the right title" do
-        visit about_path
-        expect(page).to have_title('About')
-      end
+      it { should have_content('About')}
+      it { should have_title(full_title('About'))}
 
-      #コンテンツのテスト
-      it "should have the content 'About Us'" do
-        visit about_path
-        expect(page).to have_content("#{base_content}")
-      end
     end
 
     #以下Contactページ用のtest
     describe "Contact page" do
+      before {visit root_path}
 
-      #タイトルのテスト
-      it "should have the title 'Contact'" do
-        visit contact_path
-        expect(page).to have_title('Contact')
-      end
+      it { should have_content('Contact')}
+      it { should have_title(full_title('Contact'))}
 
-      #コンテンツのテスト
-      it "should have the content 'Contact'" do
-        visit contact_path
-        expect(page).to have_content("contact page")
-      end
     end
 
   end
