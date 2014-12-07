@@ -7,5 +7,5 @@ describe ApplicationHelper do
       expect(full_title("foo")).to match(/foo/)
     end
   end
-
+  
 end
