@@ -16,6 +16,7 @@ describe "Static pages" do
     #end
 
     #以下Homeページ用のtest
+
     subject { page }
 
     shared_examples_for"all static pages" do
@@ -23,16 +24,12 @@ describe "Static pages" do
     end
 
     describe "Home page" do
+
       before {visit root_path}
       let(:heading) {'Sample App'}
       let(:page_title) {''}
 
       it_should_behave_like "all static pages"
-=begin
-      it { should have_content('Sample App') }
-      it { should have_title(full_title('')) }
-      it { should_not have_title('| Home') }
-=end
 
       describe "for signed-in users" do
         let(:user){ FactoryGirl.create(user) }
@@ -42,14 +39,37 @@ describe "Static pages" do
           sign_in user
           visit root_path
         end
-
-        it "should render the user'sfeed"do
+=begin
+        it"should render the user's feed" do
           user.feed.each do |item|
-            expect(page).to have_selector("li##{item.id}",text:item.content)
+            expect(page).to have_selector("li##{item.id}",text: item.content)
           end
         end
+=end
+
+=begin
+        it"should render the user's feed" do
+          user.feed.each do |item|
+            expect(page).to have_selector("li##{item.id}", text: item.content)
+          end
+        end
+
+        describe "follower/following counts" do
+          let(:other_user) { FactoryGirl.create(:user) }
+          before do
+            other_user.follow!(user)
+            visit root_path
+          end
+
+          it { should have_link("0 following", href: following_user_path(user)) }
+          it { should have_link("1 followers", href: followers_user_path(user)) }
+        end
+=end
       end
+
+
     end
+
 
     #以下Helpページ用のtest
     describe "Help page" do

@@ -1,0 +1,179 @@
+
+-----------------------------------------------------------------
+  pg_upgrade run on Wed Jan 21 06:29:25 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Wed Jan 21 06:29:53 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Wed Jan 21 06:32:14 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Wed Jan 21 06:33:13 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:21:30 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:23:46 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:24:28 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:33:09 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.3.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:38:29 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:40:58 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.3.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:49:14 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.4.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:51:59 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.4.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:53:16 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:53:58 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.4.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 07:55:54 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.4.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 08:07:47 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 08:08:10 2015
+-----------------------------------------------------------------
+
+command: "/usr/local/Cellar/postgresql/9.4.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres93" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  skipping missing configuration file "/usr/local/var/postgres93/postgresql.auto.conf"
+FATAL:  database files are incompatible with server
+DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.0.
+....
+pg_ctl: this data directory appears to be running a pre-existing postmaster
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 08:12:51 2015
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+  pg_upgrade run on Thu Jan 22 08:26:04 2015
+-----------------------------------------------------------------
+
